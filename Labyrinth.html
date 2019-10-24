@@ -122,9 +122,76 @@ a {
  background-color: black;
 }
 
-.start {
- background-image: url("https://raw.githubusercontent.com/naomi-clyde51/naomi-clyde51.github.io/master/beast.png") fixed;
+.onepath, .start {
+  background-image: url("https://i.imgur.com/mArwqdZ.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
+}
+
+body.orange {
+  background-image: url("https://i.imgur.com/sb34Rjr.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.yellow {
+  background-image: url("https://i.imgur.com/xFRmXjU.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.green {
+  background-image: url("https://i.imgur.com/8jlZdsA.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.blue {
+  background-image: url("https://i.imgur.com/uF3ZJzq.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.red {
+  background-image: url("https://i.imgur.com/dS2INRh.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.poison {
+  background-image: url("https://i.imgur.com/SdzHYP7.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+body.outside {
+  background-image: url("https://i.imgur.com/oNar5XD.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.please {
+  background-image: url("https://i.imgur.com/rC3PDCD.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.work {
+  background-image: url("https://i.imgur.com/jmi4ozE.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .content {
@@ -151,7 +218,7 @@ a {
 #ui-bar {
   display: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-tag name="start" color="blue"></tw-tag>,<tw-tag name="onepath" color="yellow"></tw-tag>,<tw-tag name="2paths" color="orange"></tw-tag>,<tw-tag name="1path" color="yellow"></tw-tag>,<tw-tag name="poison" color="purple"></tw-tag>,<tw-tag name="gem" color="green"></tw-tag>,<tw-tag name="hallway" color="blue"></tw-tag>,<tw-tag name="twopaths" color="orange"></tw-tag>,<tw-tag name="threepaths" color="red"></tw-tag><tw-passagedata pid="1" name="start" tags="start" position="1057.6666666666667,199.33333333333334" size="100,100">&lt;&lt;set $hp to 3&gt;&gt;
+</script><tw-tag name="start" color="blue"></tw-tag>,<tw-tag name="onepath" color="gray"></tw-tag>,<tw-tag name="2paths" color="green"></tw-tag>,<tw-tag name="1path" color="yellow"></tw-tag>,<tw-tag name="poison" color="purple"></tw-tag>,<tw-tag name="gem" color="gray"></tw-tag>,<tw-tag name="hallway" color="green"></tw-tag>,<tw-tag name="twopaths" color="orange"></tw-tag>,<tw-tag name="threepaths" color="red"></tw-tag>,<tw-tag name="orange" color="orange"></tw-tag>,<tw-tag name="yellow" color="yellow"></tw-tag>,<tw-tag name="green" color="green"></tw-tag>,<tw-tag name="blue" color="blue"></tw-tag>,<tw-tag name="red" color="red"></tw-tag><tw-passagedata pid="1" name="start" tags="start" position="1059.3333333333335,199.33333333333334" size="100,100">&lt;&lt;set $hp to 3&gt;&gt;
 &lt;&lt;set $gem to 0&gt;&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -165,9 +232,9 @@ This story follows the adventurer, &lt;&lt;textbox &quot;$YourName&quot; &quot;E
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;&lt;print $YourName&gt;&gt; turns to head back around and... uh oh! Something ate up the jellybean path &lt;&lt;print $YourName&gt;&gt; made getting here. This labyrinth shall be &lt;&lt;print $YourName&gt;&gt;&#39;s grave… unless they can find their way back out. Collect 3 healing gems.
+&lt;&lt;print $YourName&gt;&gt; turns to head back around and... uh oh! Something ate up the jellybean path &lt;&lt;print $YourName&gt;&gt; made getting here. This labyrinth shall be &lt;&lt;print $YourName&gt;&gt;&#39;s grave… unless they can find their way back out. They refuse to leave without collecting at least 3 healing gems, though.
 
-[[Proceed|corridor]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="left" tags="twopaths" position="731.6666666666665,579.6666666666666" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+[[Proceed|corridor]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="left" tags="yellow" position="731.6666666666665,579.6666666666666" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;The pathway you took is starting to become familiar... Is what would be reassuring if everything didn&#39;t look practically the same!
@@ -176,14 +243,12 @@ You see something shimmering from the corner of your eye.
 
 [[Go left|left02]]
 [[Go right|right02]]
-[[Investigate the shiny|gem01]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="right" tags="poison" position="1361.3333333333335,603.6666666666666" size="100,100">&lt;&lt;set $hp to $hp-1&gt;&gt;
+[[Investigate the shiny|gem01]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="right" tags="poison" position="1363.0000000000002,603.6666666666666" size="100,100">&lt;&lt;set $hp to $hp-1&gt;&gt;
 
 &lt;&lt;if $hp is 0&gt;&gt;
 
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
-
-&lt;img src =&quot;poison.png&quot;&gt;
 
 &lt;div class=&quot;content&quot;&gt;It&#39;s just a dead end. &lt;&lt;print $YourName&gt;&gt; might not want to stay here too long... Something doesn&#39;t smell right.
 
@@ -194,25 +259,20 @@ Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
-&lt;img src =&quot;poison.png&quot;&gt;
-
 &lt;div class=&quot;content&quot;&gt;It&#39;s just a dead end. &lt;&lt;print $YourName&gt;&gt; might not want to stay here too long... Something doesn&#39;t smell right.
 
 [[Go back|corridor]]&lt;/div&gt;
 &lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="gem01" tags="gem" position="664.6666666666666,751.6666666666666" size="100,100">&lt;&lt;set $gem to $gem+1&gt;&gt;
-&lt;&lt;set $hp to $hp+1&gt;&gt;
 
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
-&lt;img src =&quot;&quot;&gt;
+&lt;img src =&quot;https://i.imgur.com/L2bvK5i.png&quot;&gt;
 
-&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 healing gems such as this one.
+&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 gems such as this one.
 
-[[Go back|left]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="left02" tags="2paths" position="446,760" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+[[Go back|left]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="left02" tags="green" position="446,760" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
-
-&lt;img src =“corridoryellow.png”&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; thinks about all the money, bitches, etc. they&#39;ll have once they get out of here.
 
@@ -221,17 +281,15 @@ Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; walks further only to find out... damn, it&#39;s another dead end! &lt;&lt;print $YourName&gt;&gt; decides it turn around and leave.
 
-[[Go back|beast01]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="beast01" tags="" position="921,924.3333333333334" size="100,100">&lt;div class=&quot;scream&quot;&gt;AAAUGH-!!&lt;/div&gt;
-&lt;div class=&quot;header&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/naomi-clyde51/naomi-clyde51.github.io/master/beast.png&quot; width= &quot;900&quot; height= &quot;550&quot;&gt;&lt;/div&gt;
+[[Go back|beast01]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="beast01" tags="" position="924.3333333333334,922.6666666666667" size="100,100">&lt;div class=&quot;scream&quot;&gt;[[AAAUGH-!!|eaten01]]&lt;/div&gt;
+&lt;div class=&quot;header&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/naomi-clyde51/naomi-clyde51.github.io/master/beast.png&quot; width= &quot;900&quot; height= &quot;550&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="eaten01" tags="" position="929.6666666666666,1094" size="100,100">&lt;div class=&quot;gameover&quot;&gt;Game Over.&lt;/div&gt;
 
-[[...|eaten01]]</tw-passagedata><tw-passagedata pid="9" name="eaten01" tags="" position="928,1094" size="100,100">&lt;div class=&quot;content&quot;&gt;And &lt;&lt;print $YourName&gt;&gt; was never heard from again. Onto the next adventurer story!
+&lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; has been eaten! &lt;&lt;print $YourName&gt;&gt; was never heard from again. Onto the next adventurer story!
 
 [[Damn RIP|start]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="left03" tags="poison" position="367,915" size="100,100">&lt;&lt;set $hp to $hp-1&gt;&gt;
 
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
-
-&lt;img src =&quot;poison.png&quot;&gt;
 
 &lt;div class=&quot;content&quot;&gt;It&#39;s just a dead end. &lt;&lt;print $YourName&gt;&gt; might not want to stay here too long... Something doesn&#39;t smell right.
 
@@ -248,15 +306,13 @@ Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 [[Go back|left02]]
 
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="right03" tags="hallway" position="528,920" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="right03" tags="please" position="531.3333333333333,920" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
-
-&lt;img src =“hallwayyellow.png”&gt;
 
 &lt;div class=&quot;content&quot;&gt;This is a fairly long pathway, &lt;&lt;print $YourName&gt;&gt; observes. &lt;&lt;print $YourName&gt;&gt; hears something gnashing its teeth somewhere. But where?
 
 [[Yeet forward|beast01]]
-[[Wait for a moment|stay put]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="corridor" tags="twopaths" position="1048.6666666666667,519.3333333333333" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+[[Wait for a moment|stay put]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="corridor" tags="orange" position="1048.6666666666667,519.3333333333333" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; feels a faint presence amongst them.
@@ -266,52 +322,52 @@ Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; was poisoned to death! &lt;&lt;print $YourName&gt;&gt; was never heard from again. Onto the next adventurer story!&lt;/div&gt;
 
-[[Damn RIP|start]]</tw-passagedata><tw-passagedata pid="14" name="stay put" tags="hallway" position="529.6666666666666,1070" size="100,100">&lt;img src =“hallwayyellowbeast.png”&gt;
+[[Damn RIP|start]]</tw-passagedata><tw-passagedata pid="14" name="stay put" tags="work" position="533,1068.3333333333333" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; sees a silloutte of something large pass by the opening. That must have been the source of the sound and presence. It&#39;s a good thing its sight is poor.
 
-[[Proceed|corridor02]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="corridor02" tags="twopaths" position="502.66666666666663,1226.6666666666667" size="100,100">&lt;img src =“corridorgreen.png”&gt;
+[[Proceed|corridor02]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="corridor02" tags="blue" position="505.99999999999994,1226.6666666666667" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; pretends they can see a light at the end of the tunnel. Wait, what&#39;s that over there?
 
-[[Go right|right04]]
 [[Go left|left04]]
-[[Investigate the thing|gem02]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="right04" tags="threepaths" position="762.6666666666666,1424" size="100,100">&lt;img src =“”&gt;
+[[Go right|right04]]
+[[Investigate the thing|gem02]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="right04" tags="threepaths red" position="762.6666666666666,1424" size="100,100">&lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
+Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
-&lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; thinks about how foolish they were to not bring a gasmask. It smells like pee now. Not your own, though...
+&lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; thinks about how foolish they were to not bring a gasmask. It smells like pee now. Not your own, though... Oh hey! There&#39;s something shiny in one of these caves.
 
 [[Go left|gem03]]
 [[Go middle|middle02]]
 [[Go right|right05]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="gem02" tags="gem" position="490.6666666666667,1418.6666666666667" size="100,100">&lt;&lt;set $gem to $gem+1&gt;&gt;
-&lt;&lt;set $hp to $hp+1&gt;&gt;
 
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
-&lt;img src =&quot;&quot;&gt;
+&lt;img src =&quot;https://i.imgur.com/L2bvK5i.png&quot;&gt;
 
-&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 healing gems such as this one.
+&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 gems such as this one.
 
 [[Go back|corridor02]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="middle02" tags="" position="768.3333333333333,1687" size="100,100">&lt;div class=&quot;content&quot;&gt;That piss smell is stronger now. Almost like this is something&#39;s territory. &lt;&lt;print $YourName&gt;&gt; goes to turn around.
 
 [[Go back|beast01]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="gem03" tags="gem" position="571.3333333333333,1691.6666666666667" size="100,100">&lt;&lt;set $gem to $gem+1&gt;&gt;
-&lt;&lt;set $hp to $hp+1&gt;&gt;
 
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
-&lt;img src =&quot;&quot;&gt;
+&lt;img src =&quot;https://i.imgur.com/L2bvK5i.png&quot;&gt;
 
-&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 healing gems such as this one.
+&lt;div class=&quot;content&quot;&gt;Nice! The reason you came to the Labyrinth in the first place was to collect 3 gems such as this one.
 
-[[Go back|right04]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="right05" tags="" position="984.6666666666666,1683.6666666666667" size="100,100">&lt;&lt;if $gem lt 3&gt;&gt;
-&lt;img src =&quot;&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;Oh thank god! You see the mouth of the labyrinth! But wait, you don&#39;t have 3 gems! You can&#39;t leave just yet! You turn around.
+[[Go back|right04]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="right05" tags="outside" position="984.6666666666666,1683.6666666666667" size="100,100">&lt;&lt;if $gem lt 3&gt;&gt;
+
+&lt;div class=&quot;content&quot;&gt;Oh thank god! You see the outside of the labyrinth! But wait, you don&#39;t have 3 gems! You can&#39;t leave just yet! You go back inside.
 
 [[...|beast01]]&lt;/div&gt;
 
 &lt;&lt;else&gt;&gt;
-&lt;img src =&quot;outside.png&quot;&gt;
 
 &lt;div class=&quot;content&quot;&gt;Oh thank god! You made it out! Fresh air!
 
@@ -323,8 +379,6 @@ And that is the tale of &lt;&lt;print $YourName&gt;&gt;. They went to go get mon
 
 &lt;&lt;if $hp is 0&gt;&gt;
 
-&lt;img src =&quot;poison.png&quot;&gt;
-
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
@@ -334,15 +388,13 @@ Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;&lt;else&gt;&gt;
 
-&lt;img src =“poison.png”&gt;
-
 &lt;div class=&quot;items&quot;&gt;HP: &lt;&lt;print $hp&gt;&gt;
 Gems: &lt;&lt;print $gem&gt;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;It&#39;s just a dead end. &lt;&lt;print $YourName&gt;&gt; might not want to stay here too long... Something doesn&#39;t smell right.
 
 [[Go back|corridor02]]&lt;/div&gt;
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="poisondeath" tags="" position="1361.3333333333335,753.6666666666666" size="100,100">&lt;div class=&quot;content&quot;&gt;&lt;&lt;&lt;print $YourName&gt;&gt; tries to turn back but... Aw God. Stark, they don&#39;t feel so good. &lt;&lt;print $YourName&gt;&gt; collapses.
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="poisondeath" tags="" position="1363.0000000000002,753.6666666666666" size="100,100">&lt;div class=&quot;content&quot;&gt;&lt;&lt;print $YourName&gt;&gt; tries to turn back, but... Aw God. Stark, they don&#39;t feel so good. &lt;&lt;print $YourName&gt;&gt; collapses.
 
 [[...|poison01]]&lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
